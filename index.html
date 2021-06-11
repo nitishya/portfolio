@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, html {
   height: 100%;
@@ -124,6 +125,38 @@ body {
 </head>
 <body>
 
+  <link rel="stylesheet" href="stlyle.css">
+  <div class="topnav" id="myTopnav">
+    <a href="#top">Home</a>
+    <a href="#intro">Intro</a>
+    <a href="#skills">Skills</a>
+    <div class="dropdown">
+      <button class="dropbtn">Projects
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> 
+    <a href="#bottom">About</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+
+
 <div class="bgimg-1">
   <div class="caption">
   <span class="border">SCROLL DOWN</span>
@@ -148,8 +181,18 @@ body {
 
 <div class="bgimg-2">
   <div class="caption">
-    
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Bachler's in Electrical</span>
+    <div class="moduleAnimationShock">
+      <div class="hd"></div>
+      <div class="bd">
+        <h1>
+        <span class="border" style="background-color:transparent; font-size:50px;color: #f70e0e;">Bachelor's in Electrical</span>
+        </h1>
+        <div> 
+        </div>
+      </div>
+      <div class="ft"></div>
+    </div> 
+  
     </div>>
 
 </div>

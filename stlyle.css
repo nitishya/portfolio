@@ -1,0 +1,168 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  /* animation shock effect */
+
+  .moduleAnimationShock{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative; 
+    -webkit-transform-style: preserve-3d;
+    height: 340px;
+    text-align: center;
+  }
+  
+  .moduleAnimationShock .bd:hover {
+    position: relative;
+    width: 1000px;
+    height: 240px;
+    margin: 30px;
+    opacity: 1.6;
+  }
+  
+  .moduleAnimationShock .bd:hover {
+    animation-name: diagonal-slide;
+    animation-duration: 0.05s;
+    animation-iteration-count: 10;
+    animation-fill-mode: forwards;
+  }
+  
+  @-webkit-keyframes diagonal-slide {
+    from { top: 0; left: 0; animation-timing-function: linear; }
+    20% { top: -5px; left: -5px; animation-timing-function: linear; }
+    40% { top: 5px; left: -5px; animation-timing-function: linear; }
+    60% { top: 5px; left: 5px; animation-timing-function: linear; }
+    80% { top: -5px; left: 5px; animation-timing-function: linear; }
+    to { top: 0; left: 0; animation-timing-function: linear; }
+  }
+
+  div.background {
+    background: url(klematis.jpg) repeat;
+    border: 2px solid black;
+  }
+  
+  div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
