@@ -122,7 +122,8 @@
     position: relative; 
     -webkit-transform-style: preserve-3d;
     height: 140px;
-    text-align: center;
+    text-align: auto;
+    font-family: serif;
   }
   
   .moduleAnimationShock .bd:hover {
